@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    overflow-x: hidden;
+}
+
+.header{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    color: #fff;
+
+}
+
+
+.content{
+    max-width: 49rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.header-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-video video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100VW;
+    position: absolute;
+    top:0 ;
+    left: 0;
+    background: rgb(189, 211, 221);
+    z-index: 1;
+    opacity: .20;
+
+}
+
+
+.header-content {
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+    font-family:"Lexend Deco", sans-serif;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    background: black;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    text-decoration: none;  
+    font-family: "Lexend Deco", sans-serif;
+    border-radius: 2rem;
+}
+
+@media (max-width: 960px) {
+    .content {
+        padding:  0 3rem  0 3rem;
+    }
+}

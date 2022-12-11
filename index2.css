@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{ 
+    font-family: "Montserrat", sans-serif;
+    min-height: 600px;
+   
+ 
+}
+
+
+#menu a {
+    font-size:  18px;
+    font-weight: bold ;
+}
+
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span{
+    font: size 3.5rem;
+    background: rgba(255, 165, 0, .2);
+    color:var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.heading span.space{
+    background:none;
+}
+
+.main{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 1em;
+    display:grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: .6em;
+
+    animation: show 1.5s ease-in-out;
+
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+        
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.main__img{
+    width: 90%;
+    margin: auto;
+   
+}
+
+
+
+.main__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em .5em;
+    background-color: antiquewhite;
+    border-radius: .5rem;
+
+}
+
+.main__form{
+    display: grid;
+    gap: 1em;
+}
+
+.main__input{
+width: 80%;
+max-width: 500px;
+font: inherit;
+border-radius: .5em;
+border: none;
+padding: .3em .7em;
+
+
+  
+}
+
+.main__input--send{
+    background-color: orange;
+    color: #fff;
+    font-weight: 600;
+    padding: .3em .7em;
+    border-radius: .5em;
+    border: none;
+    width: 20%;
+    height: 3rem;
+
+}
+
+.main__title{
+    font-size: 3rem;
+    align-items: center;
+}
+
+.main__paragraph{
+font-weight: bold;
+
+}
+
+
+
+@media (max-width:450px){
+    html{
+        font-size:50%
+    }
+}
+
+
+.heading span{
+    font-size:2.5rem;
+}
